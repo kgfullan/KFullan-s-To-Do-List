@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		06725229245CA3BB004549B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06725228245CA3BB004549B1 /* AppDelegate.swift */; };
 		0672522B245CA3BB004549B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0672522A245CA3BB004549B1 /* SceneDelegate.swift */; };
-		0672522D245CA3BB004549B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0672522C245CA3BB004549B1 /* ViewController.swift */; };
 		06725230245CA3BB004549B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0672522E245CA3BB004549B1 /* Main.storyboard */; };
 		06725233245CA3BB004549B1 /* KFullan_s_To_Do_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06725231245CA3BB004549B1 /* KFullan_s_To_Do_List.xcdatamodeld */; };
 		06725235245CA3BD004549B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06725234245CA3BD004549B1 /* Assets.xcassets */; };
 		06725238245CA3BD004549B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06725236245CA3BD004549B1 /* LaunchScreen.storyboard */; };
 		06725243245CA3BD004549B1 /* KFullan_s_To_Do_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06725242245CA3BD004549B1 /* KFullan_s_To_Do_ListTests.swift */; };
 		0672524E245CA3BD004549B1 /* KFullan_s_To_Do_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0672524D245CA3BD004549B1 /* KFullan_s_To_Do_ListUITests.swift */; };
+		0672525C245E241F004549B1 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0672525B245E241F004549B1 /* ToDoTableViewController.swift */; };
+		0672525E245E24F3004549B1 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0672525D245E24F3004549B1 /* ToDo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		06725225245CA3BB004549B1 /* KFullan's To Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KFullan's To Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06725228245CA3BB004549B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0672522A245CA3BB004549B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0672522C245CA3BB004549B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0672522F245CA3BB004549B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06725232245CA3BB004549B1 /* KFullan_s_To_Do_List.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KFullan_s_To_Do_List.xcdatamodel; sourceTree = "<group>"; };
 		06725234245CA3BD004549B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		06725249245CA3BD004549B1 /* KFullan's To Do ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KFullan's To Do ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0672524D245CA3BD004549B1 /* KFullan_s_To_Do_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFullan_s_To_Do_ListUITests.swift; sourceTree = "<group>"; };
 		0672524F245CA3BD004549B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0672525B245E241F004549B1 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		0672525D245E24F3004549B1 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		0672521C245CA3BB004549B1 = {
 			isa = PBXGroup;
 			children = (
+				0672525B245E241F004549B1 /* ToDoTableViewController.swift */,
 				06725227245CA3BB004549B1 /* KFullan's To Do List */,
 				06725241245CA3BD004549B1 /* KFullan's To Do ListTests */,
 				0672524C245CA3BD004549B1 /* KFullan's To Do ListUITests */,
@@ -103,8 +106,8 @@
 			children = (
 				06725228245CA3BB004549B1 /* AppDelegate.swift */,
 				0672522A245CA3BB004549B1 /* SceneDelegate.swift */,
-				0672522C245CA3BB004549B1 /* ViewController.swift */,
 				0672522E245CA3BB004549B1 /* Main.storyboard */,
+				0672525D245E24F3004549B1 /* ToDo.swift */,
 				06725234245CA3BD004549B1 /* Assets.xcassets */,
 				06725236245CA3BD004549B1 /* LaunchScreen.storyboard */,
 				06725239245CA3BD004549B1 /* Info.plist */,
@@ -262,10 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0672522D245CA3BB004549B1 /* ViewController.swift in Sources */,
 				06725233245CA3BB004549B1 /* KFullan_s_To_Do_List.xcdatamodeld in Sources */,
+				0672525E245E24F3004549B1 /* ToDo.swift in Sources */,
 				06725229245CA3BB004549B1 /* AppDelegate.swift in Sources */,
 				0672522B245CA3BB004549B1 /* SceneDelegate.swift in Sources */,
+				0672525C245E241F004549B1 /* ToDoTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
