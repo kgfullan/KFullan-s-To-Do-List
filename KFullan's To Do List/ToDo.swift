@@ -12,14 +12,3 @@ class ToDo {
     var name = ""
     var important = false
 }
-
-func createToDos() -> [ToDo] {
-    let swift = ToDo()
-    swift.name = "Learn Swift"
-    swift.important = true
-    
-    let dog = ToDo()
-    dog.name = "Walk the Dog"
-    
-    return [swift, dog]
-}

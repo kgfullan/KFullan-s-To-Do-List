@@ -1,5 +1,5 @@
 //
-//  TableViewController.swift
+//  ToDoTableViewController.swift
 //  KFullan's To Do List
 //
 //  Created by Kathryn Fullan on 5/2/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class ToDoTableViewController: UITableViewController {
 
     func createToDos() -> [ToDo] {
         let swift = ToDo()
@@ -50,4 +50,24 @@ class TableViewController: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let toDo = toDos[indexPath.row]
+        
+        performSegue(withIdentifier: "moveToComplete", sender: toDo)
+    }
+
+       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let addVC = segue.destination as? AddToDoViewController {
+            addVC.previousVC = self
+        }
+        
+        if let completeVC = segue.destination as? CompleteToDoViewController {
+            if let toDo = sender as? ToDo {
+                completeVC.selectedToDo = toDo
+                completeVC.previousVC = self
+            }
+        }
+        
+       }
 }
